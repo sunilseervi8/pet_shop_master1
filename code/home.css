@@ -1,0 +1,434 @@
+
+body {
+     margin: 0;
+     background-size: cover;
+     overflow: auto;
+     font-family: sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(102, 35, 64);
+    color: white;
+    height: 60px;
+    font-size: 21px;
+
+    
+}
+
+.brand-title {
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+
+.navbar-links {
+    height: 100%;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    padding-left: 5px;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding-top: -5px;
+    padding-left: 2rem;
+}
+
+.navbar-links li:hover {
+    background-color: #555;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+   
+    text-decoration: none;
+
+    font-size: 16px;
+    margin: 180px 8px;
+    -webkit-transition-duration: 0.2s; 
+    transition-duration: 0.2s;
+    cursor: pointer;
+    vertical-align: middle;
+   
+}
+.screen
+{
+    background-image:url('freddie.jpg');
+    background-size: cover;
+    width:100%;
+    height:600px;
+    background-position: center;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    background-attachment: fixed;
+    height:80vh;
+   
+}
+
+.button1 {
+    background-color: transparent;
+    color:white; /* black*/
+    border: 3px solid #4CAF50;
+    border-radius: 5px;
+    
+}
+
+.button1:hover {
+    background-color: #4CAF50;
+    color: white;
+
+}
+
+.button2 {
+    background-color:  transparent;
+    color: white; 
+    border-radius: 5px;
+    border: 3px solid rgba(31, 58, 147, 1);
+}
+
+.button2:hover {
+    background-color:rgba(31, 58, 147, 1);
+    color: white;
+}
+
+.button3 {
+    background-color:transparent; 
+    color: white; 
+    border-radius: 5px;
+    border: 3px solid #f44336;
+}
+
+.button3:hover {
+    background-color: #f44336;
+    color: white;
+}
+
+.button4 {
+    background-color: transparent;
+    color: white;
+    border-radius: 5px;
+    border: 3px solid rgba(249, 105, 14, 1);
+}
+
+.button4:hover {background-color:rgba(249, 105, 14, 1);
+ color:white;
+}
+
+.button5 {
+    background-color:  transparent;
+    color: white;
+    border-radius: 5px;
+    border: 3px solid #b40a70;
+}
+
+.button5:hover {
+    background-color:#8d2663;
+    color: white;
+}
+.homeHover:hover{
+    background-color:rgb(179, 137, 156); 
+    border-radius: 25%; 
+    
+}
+
+
+/*----Horizontal list----*/
+
+.horizontal-list{
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+}
+
+.horizontal-list li{
+    display: inline-block;
+    margin:0px 14px 14px 14px;
+    /* font-weight: 100; */
+    font-size:1.2rem;
+}
+
+.horizontal-list li a{
+    color:white;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.horizontal-list li a:hover{
+    color:lightgray;
+    text-decoration: underline;
+}
+
+.text-center{
+    text-align: center;
+}
+/*-------Social Icons-----*/
+
+.social-icons li a i{
+    padding: 10px;
+    font-size: 1.3rem;
+    border-radius: 50%;
+    text-align:right;
+    padding-top: 10px;
+}
+
+
+.social-icons li a i:hover{
+    box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
+}
+.social-icons li:hover{
+    border-radius: 50%;
+}
+#instagram:hover{
+     background: linear-gradient(49.2deg,#f9ed32,#ee2a7b,#002aff);
+}
+#linkedin:hover {
+  background-color: #0077b5;
+}
+#twitter:hover {
+  background-color: #83c3f3;
+}
+#gmail:hover {
+  background-color:#dd4b39;
+}
+#whatsapp:hover {
+  background-color: #6ba92f;
+}
+#facebook:hover {
+  background-color: #3b5998;
+}section {
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+
+section:nth-child(2n) {
+    background-color: #9e9b9b29;
+}
+
+section:nth-child(2n + 1) {
+    background-color: white;
+}
+.section-heading {
+    width: auto;
+    padding: 20px 10px 10px;
+    letter-spacing: 2px;
+    font-weight: -2x;
+    /* font-weight: 400; */
+}
+
+.section-heading span {
+    font-size: 40px;
+    color: #2857a4;
+    display: inline-block;
+    padding-top: 10px;
+    margin-right: 0.5rem;
+}
+
+/*-----------------About Section----------*/
+#about{
+    height: auto;
+    width: 100%;
+    position: relative;/* This property will override the header portion so that my photo appears clearly */
+    margin-bottom: 30px;
+}
+
+
+/*---------Contact Details----------*/
+#contact {
+    background-color: #0abcf9;
+    background-image: linear-gradient(50deg, #2857a4 0%, #403066 74%);
+    color: white;
+    margin: auto;
+    margin-left: -200px;
+    overflow: hidden;
+    position: inherit;
+}
+/* #contact h1, */
+#contact h1 span {
+    color: white;
+}
+
+#contact-form {
+    margin-left: 20%;
+}
+
+#contact-container {
+    display: flex;
+}
+
+#my-details-container {
+    width: 35%;
+    margin-left: 6%;
+}
+
+#my-details-container h3 {
+    color: white;
+    font-weight: 550;
+    font-size: 1.2rem;
+}
+
+#contact-form-container {
+    width: 50%;
+}
+
+#my-details-container p {
+    color: #d9dcdd;
+    font-size: 0.9rem;
+}
+
+.my-details-info-container {
+    margin-bottom: 20px;
+    color: #d9dcdd;
+    font-size: 1rem;
+}
+
+.my-details-info-container span {
+    margin-left: 0.4rem;
+}
+
+.my-details-info-container i {
+    color: white;
+}
+
+
+#contact-form input, textarea {
+    max-width: 90%;
+    margin: 15px;
+    padding: 4px 10px;
+    border: 0px solid transparent;
+    border-bottom: 2px solid white;
+    color: #d9dcdd;
+    background: transparent;
+    width: 90%;
+    line-height: 1.6;
+    font-size: 1.05rem;
+}
+
+#contact-form button[type="submit"] {
+    background: transparent;
+    font-size: 0.95rem;
+    border: 2px solid white;
+    margin-top: 5%;
+    margin-left: 35%;
+    border-radius: 2px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.046875em;
+    line-height: 1;
+    padding: 0.8em 0.8em 0.78em;
+    text-transform: uppercase;
+}
+
+#contact-form button:hover {
+    background: white;
+    color: #13386fe0;
+}
+.para{
+    padding-left: 30px;
+    padding-right: 20px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.visionImg{
+    height: 90Vh;
+    padding-top: 10px;
+    background-position: cover;
+    image-resolution: 100%;
+    overflow:"hidden"
+    
+}
+span{
+    overflow: hidden;
+}
+.visionImg{
+    width: 100%;
+    height: auto;
+   
+  
+}
+@media screen  and(max-width:500){
+    .response{
+        padding: 0px,20px;
+        color: #002aff;
+    }
+}
